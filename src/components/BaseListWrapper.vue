@@ -71,6 +71,9 @@
             </div>
             <div class="input-group">
               <base-button role="submit">Submit</base-button>
+              <base-button class="btnClose" @click="showModal = false"
+                >Close</base-button
+              >
             </div>
           </form>
         </div>
@@ -347,5 +350,9 @@ input[type="time"]::placeholder,
 .datepicker:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #00c851;
+}
+.btnClose {
+  margin-top: 1rem;
+  background-color: red;
 }
 </style>
